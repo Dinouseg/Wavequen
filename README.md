@@ -175,7 +175,7 @@ The renderer runs with context isolation and web security on; audio is served th
 
 ## About this project
 
-Wavequen is a solo, hobby-scale project — parts of the code were written with AI assistance
+Wavequen is a solo, hobby-scale project — whole code were written by AI (Claude Code)
 and then reviewed and adjusted by hand. It hasn't been tested across every setup, so you may
 run into rough edges or the occasional bug, especially on macOS/Linux builds. Issues and pull
 requests are welcome.
