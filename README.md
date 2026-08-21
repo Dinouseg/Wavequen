@@ -57,11 +57,11 @@ Nothing is uploaded, nothing is streamed, nothing is moved or renamed on your di
 
 | Player | Visualiser |
 |---|---|
-| *(screenshot player baru)* | *(screenshot fullscreen vizualizéru)* |
+| ![Player](assets/screenshots/player.png) | ![Visualiser](assets/screenshots/visualiser.png) |
 
 | Stats | Playlists|
 |---|---|
-| *(screenshot statistik poslechu)* | *(screenshot Discord profilu s aktivitou)* |
+| ![Stats](assets/screenshots/stats.png) | ![Playlists](assets/screenshots/playlists.png) |
 
 ## Install
 
