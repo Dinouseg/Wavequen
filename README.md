@@ -59,7 +59,7 @@ Nothing is uploaded, nothing is streamed, nothing is moved or renamed on your di
 |---|---|
 | *(screenshot player baru)* | *(screenshot fullscreen vizualizéru)* |
 
-| Stats | Discord Rich Presence |
+| Stats | Playlists|
 |---|---|
 | *(screenshot statistik poslechu)* | *(screenshot Discord profilu s aktivitou)* |
 
