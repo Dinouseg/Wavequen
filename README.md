@@ -110,21 +110,15 @@ it takes about two minutes.
 3. Give it a name — this is exactly what will show up on your profile under "Playing", so name it
    something like `Wavequen` or `Music`.
 
-<!-- screenshot: New Application dialog -->
-
 ### 2. Copy the Application ID
 
 1. On the application's **General Information** page, find **Application ID**.
 2. Click **Copy**.
 
-<!-- screenshot: General Information page with Application ID highlighted -->
-
 ### 3. Paste it into Wavequen
 
 1. Open Wavequen → **Settings** → **Discord Rich Presence**.
 2. Paste the ID into the field and enable the toggle.
-
-<!-- screenshot: Wavequen settings, Discord Rich Presence field -->
 
 Presence stays off until an ID is set, and is silently skipped when the Discord desktop app isn't
 running.
@@ -138,8 +132,6 @@ For the default cover and the play/pause badge to show up:
    - `wavequen` — fallback cover art
    - `play` — badge shown while playing
    - `pause` — badge shown while paused
-
-<!-- screenshot: Art Assets upload page -->
 
 ## Build
 
