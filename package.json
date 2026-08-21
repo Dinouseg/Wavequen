@@ -1,0 +1,80 @@
+{
+  "name": "wavequen",
+  "version": "1.0.0",
+  "description": "A minimal offline desktop music player for your local files, with folder playlists, listening stats, a live visualiser and Discord Rich Presence.",
+  "main": "main.js",
+  "author": "Dinouseg",
+  "license": "MIT",
+  "homepage": "https://github.com/Dinouseg/wavequen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dinouseg/wavequen.git"
+  },
+  "keywords": [
+    "music-player",
+    "electron",
+    "offline",
+    "local-music",
+    "discord-rich-presence",
+    "visualizer"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "test": "node test.js",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux",
+    "dist:mac": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "@xhayper/discord-rpc": "^1.3.4"
+  },
+  "build": {
+    "appId": "eu.dinouseg.wavequen",
+    "productName": "Wavequen",
+    "directories": {
+      "output": "dist",
+      "buildResources": "assets"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "app.js",
+      "index.html",
+      "style.css",
+      "lib/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "portable", "arch": ["x64"] }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "Wavequen",
+      "artifactName": "Wavequen-${version}-setup.${ext}"
+    },
+    "portable": {
+      "artifactName": "Wavequen-${version}-portable.${ext}"
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "category": "AudioVideo",
+      "target": ["AppImage"]
+    },
+    "mac": {
+      "icon": "assets/icon.png",
+      "category": "public.app-category.music",
+      "target": ["dmg"]
+    }
+  }
+}
